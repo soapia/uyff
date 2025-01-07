@@ -9,7 +9,54 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play uyff project.</tw-noscript></noscript></tw-story>
-<tw-storydata name="uyff project" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="B33FB72E-B5DA-4C33-9783-8D7C2BD4E4FF" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="625,300" size="100,100">Hi! Welcom to The 2045 High — the forward-looking version of the future of education in the United States. I&#39;m your new advisor, Dr. Learnwell.
+<tw-storydata name="uyff project" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="B33FB72E-B5DA-4C33-9783-8D7C2BD4E4FF" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">:root {
+  --bg-color: #DCEEF9;
+  --line-color-2: #B9DDF3;
+  --line-color-1: #96CCED;
+}
+
+
+body {
+  color: #15537A;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+mark {
+  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+          animation: 1.5s highlight 1.5s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(90deg, #7efff5 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+
+@-webkit-keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+
+tw-story {
+  width: 100%;
+  background-color: var(--bg-color);
+  background-image: linear-gradient(var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(90deg, var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(var(--line-color-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px);
+  background-position: -1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px;
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+}
+
+tw-passage {
+  color: #15537A;
+  font-family: Helvetica;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="625,300" size="100,100">Hi! Welcome to &lt;mark&gt;The 2045 High&lt;/mark&gt; — the forward-looking version of the future of education in the United States. I&#39;m your new advisor, Dr. Learnwell.
 
 (set: $name to (prompt: &quot;What&#39;s your name?&quot;, &quot;&quot;))
 
@@ -17,9 +64,9 @@
 
 (else: )[(set: $name to &quot;Sofia&quot;) Hi $name! [[Let&#39;s get started]].]</tw-passagedata><tw-passagedata pid="2" name="Let&#39;s get started" tags="" position="625,425" size="100,100">I know you&#39;re a transfer from 2025 High, which is definitely quite a bit different from our institution. Let me outline some of the core differences between our institutions:
 
-* &#39;&#39;Funding&#39;&#39; — Your school relies on property tax funding, which results in inequality of education quality depending on where you were born. At our school and district, funding still comes from taxes, but instead spread equitably across schools within the state, so students can enjoy the same quality regardless of their home town.
-* &#39;&#39;Assessments&#39;&#39; — Tests, and quizzes, and scantrons (oh my!) are definitely not anyone&#39;s favority thing... but we can&#39;t say we entirely got rid of them either. But trust us, it&#39;s not what you&#39;re thinking. You&#39;ll see as you start taking classes.
-* &#39;&#39;Participatory Curriculum Development&#39;&#39; — You&#39;re stuck here for the next four years, might as well have a say in what you learn! Unlike the typical model of state standards and local implementation of said standards, the standards as well as their implementation are (in many, but not all cases) subject to community revision and personlization. Students, faculty, and the school district work together to create learning trajectories that work for the students.
+* &#39;&#39;Funding&#39;&#39; — Your school relies on property tax funding, which results in inequality of education quality depending on where you were born. At our school and district, funding still comes from taxes, but instead spread equitably across schools within the state, so &lt;mark&gt;students can enjoy the same quality regardless of their home town&lt;/mark&gt;.
+* &#39;&#39;Assessments&#39;&#39; — Tests, and quizzes, and scantrons (oh my!) are definitely not anyone&#39;s favority thing... but we can&#39;t say we entirely got rid of them either. But trust us, it&#39;s not what you&#39;re thinking. You&#39;ll see as you start taking classes, but essentially, we focus more on &lt;mark&gt;what you can practically accomplish with your knowledge&lt;/mark&gt; than your ability to select a multiple choice answer.
+* &#39;&#39;Participatory Curriculum Development&#39;&#39; — You&#39;re stuck here for the next four years, might as well &lt;mark&gt;have a say in what you learn&lt;/mark&gt;! Unlike the typical model of state standards and local implementation of said standards, the standards as well as their implementation are (in many, but not all cases) subject to community revision and personlization. &lt;mark&gt;Students, faculty, and the school district work together to create learning trajectories that work for the students&lt;/mark&gt;.
 
 Sound good? [[Let&#39;s get to your first class]]!</tw-passagedata><tw-passagedata pid="3" name="Let&#39;s get to your first class" tags="" position="625,550" size="100,100">Okay, looks like your first class of the day is...math!
 
@@ -31,26 +78,26 @@ Sound good? [[Let&#39;s get to your first class]]!</tw-passagedata><tw-passageda
 [[How to Build a Robot: Calculus for Engineering]]
 [[Mathematical Representations of Art]]
 [[Statistics for Social Sciences]]
-</tw-passagedata><tw-passagedata pid="5" name="Ugh, I hate math..." tags="" position="750,675" size="100,100">Not to worry; if you&#39;re the type of student that&#39;s always wondering &quot;how am I ever going to use this?&quot;, trust us, you&#39;re not alone. In all of our math offerings, students generally learn the same concepts and meet basic standards, but learn different applications of them. Your teacher Mr. Pythagoras has unique offerings for folks who seek to find the meaning of a subject like Math! Here are some options:
+</tw-passagedata><tw-passagedata pid="5" name="Ugh, I hate math..." tags="" position="750,675" size="100,100">Not to worry; if you&#39;re the type of student that&#39;s always wondering &quot;how am I ever going to use this?&quot;, trust us, you&#39;re not alone. In all of our math offerings, students generally learn the same concepts and meet basic standards, but &lt;mark&gt;learn different applications of them&lt;/mark&gt;. Your teacher Mr. Pythagoras has unique offerings for folks who seek to find the meaning of a subject like Math! Here are some options:
 
 [[What&#39;s a deductible? Math for Life]]
 [[Mathematical Representations of Art]]
 [[Statistics for Social Sciences]]
 </tw-passagedata><tw-passagedata pid="6" name="What&#39;s a deductible? Math for Life" tags="" position="625,800" size="100,100">//&quot;Wait...am I learning how to do taxes???&quot;// Yes...eventually!
 
-Our math classes use a project-based learning framework where students use the term to learn the skills necessary to complete a creative and practical final project which, yes, might include helping a local small business with some basic tax calculations. This general move away from exam-based mathematics gives students both the neccesary framework to learn vital math skills and the platform to put their skills to use. 
+Our math classes use a &lt;mark&gt;project-based learning framework&lt;/mark&gt; where students use the term to learn the skills necessary to complete a creative and practical final project which, yes, might include helping a local small business with some basic tax calculations. This general move away from exam-based mathematics gives students both the neccesary framework to learn vital math skills and &lt;mark&gt;the platform to put their skills to use&lt;/mark&gt;. 
 
 [[Off to your next class...]]</tw-passagedata><tw-passagedata pid="7" name="Mathematical Representations of Art" tags="" position="500,800" size="100,100">//&quot;Am I gonna use math to make art???&quot;// Yes...eventually!
 
-Our math classes use a project-based learning framework where students use the term to learn the skills necessary to complete a creative and practical final project which, yes, might include developing math-based programs for artistic expression. This general move away from exam-based mathematics gives students both the neccesary framework to learn vital math skills and the platform to put their skills to use. 
+Our math classes use a &lt;mark&gt;project-based learning framework&lt;/mark&gt; where students use the term to learn the skills necessary to complete a creative and practical final project which, yes, might include developing math-based programs for artistic expression. This general move away from exam-based mathematics gives students both the neccesary framework to learn vital math skills and &lt;mark&gt;the platform to put their skills to use&lt;/mark&gt;. 
 
 [[Off to your next class...]]</tw-passagedata><tw-passagedata pid="8" name="Statistics for Social Sciences" tags="" position="625,925" size="100,100">//&quot;Wait...am I going to be collecting and analyzing my own data for social science???&quot;// Yes...eventually!
 
-Our math classes use a project-based learning framework where students use the term to learn the skills necessary to complete a creative and practical final project which, yes, might include a community-based statistical research project. This general move away from exam-based mathematics gives students both the neccesary framework to learn vital math skills and the platform to put their skills to use. 
+Our math classes use a &lt;mark&gt;project-based learning framework&lt;/mark&gt; where students use the term to learn the skills necessary to complete a creative and practical final project which, yes, might include a community-based statistical research project. This general move away from exam-based mathematics gives students both the neccesary framework to learn vital math skills and &lt;mark&gt;the platform to put their skills to use&lt;/mark&gt;. 
 
 [[Off to your next class...]]</tw-passagedata><tw-passagedata pid="9" name="How to Build a Robot: Calculus for Engineering" tags="" position="750,800" size="100,100">//&quot;I get to build a robot???&quot;// Yes...eventually!
 
-Our math classes use a project-based learning framework where students use the term to learn the skills necessary to complete a creative and practical final project which, yes, might include building a robot. This general move away from exam-based mathematics gives students both the neccesary framework to learn vital math skills and the platform to put their skills to use. 
+Our math classes use a &lt;mark&gt;project-based learning framework&lt;/mark&gt; where students use the term to learn the skills necessary to complete a creative and practical final project which, yes, might include building a robot. This general move away from exam-based mathematics gives students both the neccesary framework to learn vital math skills and &lt;mark&gt;the platform to put their skills to use&lt;/mark&gt;. 
 
 [[Off to your next class...]]</tw-passagedata><tw-passagedata pid="10" name="Off to your next class..." tags="" position="750,925" size="100,100">Time for English and Media Literacy!
 
@@ -58,17 +105,17 @@ Did you do your homework?
 
 [[Uhh... what homework?]]</tw-passagedata><tw-passagedata pid="11" name="Uhh... what homework?" tags="" position="750,1050" size="100,100">Don&#39;t worry, I&#39;m sure you already did it without realizing it. 
 
-English classes at our school are combined with media literacy because in our present world, we don&#39;t only need to learn how to read books; everyday, we&#39;re reading advertisements, AI-generated content, political content, social media posts, movies... you name it! Just like normal English classes, our course teaches you to read between the lines of all forms of media and critically analyze pieces before acting upon what we see.
+English classes at our school are combined with media literacy because in our present world, we don&#39;t only need to learn how to read books; everyday, we&#39;re reading advertisements, AI-generated content, political content, social media posts, movies... you name it! Just like normal English classes, &lt;mark&gt;our course teaches you to read between the lines of all forms of media and critically analyze pieces&lt;/mark&gt; before acting upon what we see.
 
 Our homework everyday is to take a piece of media that you engaged with—whether by liking, commenting, reposting, sharing with someone else, or simply talked about with friends or family—and reflect on how and why that piece of media elicited a reaction from you. Did you react positively or negatively to it? What went through your head before you reacted? What went through your mind after?
 
-We use these daily reflections as well as our normal curricular material to inform the way we interact with media in the future. 
+We use these daily reflections as well as our normal curricular material to &lt;mark&gt;inform the way we interact with media in the future&lt;/mark&gt;. 
 
 [[Great! Let&#39;s head to our next class.]]</tw-passagedata><tw-passagedata pid="12" name="Great! Let&#39;s head to our next class." tags="" position="750,1175" size="100,100">We&#39;re going to sit outside on the grass with some new friends, Rehema and Fatima — they&#39;re your local language study partners! Your global partners are going to be calling in from Nairobi. Say hi to them!
 
 [[Hujambo!]]
 
-[[Mambo!]]</tw-passagedata><tw-passagedata pid="13" name="Hujambo!" tags="" position="687.5,1300" size="100,100">Your language partner Rehema just whispered reminding you that when you&#39;re addressing multiple people, you should say hamjambo, rather than hujambo. That&#39;s alright though, it&#39;s a very common mistake! Because Rehema is a semi-native speaker of Swahili whose family immigrated from Burundi, she&#39;s taking more of a oversight role for these speaking exercises, building both her confidence in the language and her leadership skills. She still needs help refining her grammar, so the pen pal portion of the language partnerships will allow her to become well versed in Swahili Sanifu, which Fatima writes in—but hardly speaks—quite well. Sounds good?
+[[Mambo!]]</tw-passagedata><tw-passagedata pid="13" name="Hujambo!" tags="" position="687.5,1300" size="100,100">Your language partner Rehema just whispered reminding you that when you&#39;re addressing multiple people, you should say hamjambo, rather than hujambo. That&#39;s alright though, it&#39;s a very common mistake! Because Rehema is a semi-native speaker of Swahili whose family immigrated from Burundi, she&#39;s taking more of a oversight role for these speaking exercises, &lt;mark&gt;building both her confidence in the language and her leadership skills&lt;/mark&gt;. She still needs help refining her grammar, so the pen pal portion of the language partnerships will allow her to become well versed in Swahili Sanifu, which Fatima writes in—but hardly speaks—quite well. Sounds good?
 
 [[Sawa sawa!]]
 
@@ -77,37 +124,37 @@ We use these daily reflections as well as our normal curricular material to info
 
 You&#39;re going to be spending this period talking about the schooling systems in your respective countries to gain vocabulary and confidence in this subject matter. Later, you&#39;ll write to your pen pals about this to put those skills to use in a different medium!
 
-Here in 2045, Kiswahili is one of the most spoken languages globally, along with others like Hindi/Urdu, Mandarin, Igbo, and Indonesian. Technically even at 2025, it was one of the most spoken languages, but less emphasis was placed on widely spoken languages and more was placed on languages deemed to have certain perceived strategic or economic importance to the Western world. 
+Here in 2045, &lt;mark&gt;Kiswahili is one of the most spoken languages globally, along with others like Hindi/Urdu, Mandarin, Igbo, and Indonesian&lt;/mark&gt;. Technically even at 2025, it was one of the most spoken languages, but less emphasis was placed on widely spoken languages and more was placed on languages deemed to have certain perceived strategic or economic importance to the Western world. 
 
-While all students at 2045 are still expected to know and use languages of local importance starting in elementary school, like Spanish and ASL, a tertiary language must be taken to adequately engage with the world outside of our classroom. Kiswahili is a great fit for here in DC, where there&#39;s a considerable Congolese population, but our school also has opportunities to take other languages of global/local importance, or we can see if our global directory of language partners can help you learn less commonly spoken languages of personal importance, like the languages your parents speak. Sawa sawa? (Okay?)
+While all students at 2045 are still expected to know and use languages of local importance starting in elementary school, like Spanish and ASL, a tertiary language must be taken to adequately &lt;mark&gt;engage with the world outside of our classroom&lt;/mark&gt;. Kiswahili is a great fit for here in DC, where there&#39;s a considerable Congolese population, but our school also has opportunities to take other languages of global/local importance, or we can see if our &lt;mark&gt;global directory of language partners can help you learn less commonly spoken languages of personal importance&lt;/mark&gt;, like the languages your parents speak. Sawa sawa? (Okay?)
 
-[[Sawa sawa!]]</tw-passagedata><tw-passagedata pid="15" name="Why am I learning Swahili? Can I take a different language like Spanish?" tags="" position="812.5,1550" size="100,100">Students in our district begin multilingual schooling in Kindergarten, so hopefully we can get you caught up there! 
+[[Sawa sawa!]]</tw-passagedata><tw-passagedata pid="15" name="Why am I learning Swahili? Can I take a different language like Spanish?" tags="" position="825,1550" size="100,100">Students in our district &lt;mark&gt;begin multilingual schooling in Kindergarten&lt;/mark&gt;, so hopefully we can get you caught up there! 
 
-Here in 2045, Kiswahili is one of the most spoken languages globally, along with others like Hindi/Urdu, Mandarin, Igbo, and Indonesian—you can take courses in any global majority languages; let us know which, and we&#39;ll place you in a different hybrid cohort! 
+Here in 2045, &lt;mark&gt;Kiswahili is one of the most spoken languages globally, along with others like Hindi/Urdu, Mandarin, Igbo, and Indonesian&lt;/mark&gt;—you can take courses in any global majority languages; let us know which, and we&#39;ll place you in a different hybrid cohort! 
 
 Technically even at 2025, many of these were among the most spoken languages, but less emphasis was placed on widely spoken languages and more was placed on languages deemed to have certain perceived strategic or economic importance to the Western world. 
 
-While all students at 2045 are still expected to know and use languages of local importance starting in elementary school, like Spanish and ASL, a tertiary language must be taken to adequately engage with the world outside of our classroom. Kiswahili is a great fit for here in DC, where there&#39;s a considerable Congolese population, but our school also has opportunities to take other languages of global/local importance, or we can see if our global directory of language partners can help you learn less commonly spoken languages of personal importance, like the languages your parents speak. Sawa sawa? (Okay?)
+While all students at 2045 are still expected to know and use languages of local importance starting in elementary school, like Spanish and ASL, a tertiary language must be taken to adequately &lt;mark&gt;engage with the world outside of our classroom&lt;/mark&gt;. Kiswahili is a great fit for here in DC, where there&#39;s a considerable Congolese population, but our school also has opportunities to take other languages of global/local importance, or we can see if our &lt;mark&gt;global directory of language partners can help you learn less commonly spoken languages of personal importance&lt;/mark&gt;, like the languages your parents speak. Sawa sawa? (Okay?)
 
 [[Sawa sawa!]]</tw-passagedata><tw-passagedata pid="16" name="Sawa sawa!" tags="" position="750,1675" size="100,100">Poa sana! 
 
-Time to choose an elective — a lot of our offering are similar in subject matter to your previous school, but incorporate some newer elements, like project-based learning, community involvement, independent inquiry, and participatory action research. We do have two new offerings that your school didn&#39;t offer, which may be of interest:
+Time to choose an elective — a lot of our offering are similar in subject matter to your previous school, but incorporate some newer elements, like &lt;mark&gt;project-based learning, community involvement, independent inquiry, and participatory action research&lt;/mark&gt;. We do have two new offerings that your school didn&#39;t offer, which may be of interest:
 
 [[Leading Local Government]]
 [[Hometown Work-Study]]
-[[Student Seminar]]</tw-passagedata><tw-passagedata pid="17" name="Leading Local Government" tags="" position="750,1800" size="100,100">This class, like the others, was the result of engaging with students in curricular decision-making processes. Through these conversations, we realized that both faculty and students agree that greater knowledge and involvement in local government processes helps students engage more productively in these curricular conversations.
+[[Student Seminar]]</tw-passagedata><tw-passagedata pid="17" name="Leading Local Government" tags="" position="750,1800" size="100,100">This class, like the others, was the result of &lt;mark&gt;engaging with students in curricular decision-making processes&lt;/mark&gt;. Through these conversations, we realized that both faculty and students agree that greater knowledge and involvement in local government processes helps students engage more productively in these curricular conversations.
 
-This hands-on, learning-by-doing course students to take the drivers&#39; seat and have a tangible hand in local government decision-making—at least for a little while. The term starts with learning the ins and outs of their local city council or school district board and teaches us how to draft, analyze, and present policy proposals for a wide audience in a particular issue area. It builds communication skills, leadership skills, and diplomacy as each student in this tight-knit course becomes eligible for the youth-designated seat of their local governing body. 
+This hands-on, learning-by-doing course students to &lt;mark&gt;take the drivers&#39; seat and have a tangible hand in local government decision-making&lt;/mark&gt;—at least for a little while. The term starts with learning the ins and outs of their local city council or school district board and teaches us how to draft, analyze, and present policy proposals for a wide audience in a particular issue area. It builds communication skills, leadership skills, and diplomacy as each student in this tight-knit course becomes eligible for the youth-designated seat of their local governing body. 
 
-[[Sounds cool!]]</tw-passagedata><tw-passagedata pid="18" name="Hometown Work-Study" tags="" position="875,1800" size="100,100">This class, like the others, was the result of engaging with students in curricular decision-making processes. Through these conversations, we realized that both faculty and students agree that many low income students would perform better in school if they were able to have their part-time work be a core part of their education.
+[[Sounds cool!]]</tw-passagedata><tw-passagedata pid="18" name="Hometown Work-Study" tags="" position="875,1800" size="100,100">This class, like the others, was the result of &lt;mark&gt;engaging with students in curricular decision-making processes&lt;/mark&gt;. Through these conversations, we realized that both faculty and students agree that many low income students would perform better in school if they were able to have their part-time work be a core part of their education.
 
-This work-study style class allows students to learn about businesses and organizations in their community while completing an internship, working locally, or shadowing a career. The term starts with learning the ins and outs of career preparedness and teaches us how to present yourself in a professional environment. Like federal work-study, this course is partially subsidized by the district for income-eligible students to ensure their work and school do not interfere with one another, but rather complement on another.
+This work-study style class allows students to &lt;mark&gt;learn about businesses and organizations in their community while completing an internship, working locally, or shadowing a career&lt;/mark&gt;. The term starts with learning the ins and outs of career preparedness and teaches us how to present yourself in a professional environment. Like federal work-study, this course is &lt;mark&gt;partially subsidized by the district for income-eligible students&lt;/mark&gt; to ensure their work and school do not interfere with one another, but rather complement on another.
 
-[[Sounds cool!]]</tw-passagedata><tw-passagedata pid="19" name="Student Seminar" tags="" position="625,1800" size="100,100">This class, like the others, was the result of engaging with students in curricular decision-making processes. Through these conversations, we realized that both faculty and students agree that being able to teach helps students build a number of life skills and reinforces newly acquired knowledge.
+[[Sounds cool!]]</tw-passagedata><tw-passagedata pid="19" name="Student Seminar" tags="" position="625,1800" size="100,100">This class, like the others, was the result of &lt;mark&gt;engaging with students in curricular decision-making processes&lt;/mark&gt;. Through these conversations, we realized that both faculty and students agree that being able to teach helps students build a number of life skills and reinforces newly acquired knowledge.
 
-This research-based class allows students to take the drivers&#39; seat and teach their own class—at least for a little while. The term starts with learning the ins and outs of inclusive pedagogy and teaches us how to conduct and present research for a wide audience in a particular issue area. It builds communication skills, leadership skills, and teamwork as each student team ends the term with a three-day lesson blitz to teach their peers about their findings and engage them with projects to cement their learnings. 
+This research-based class allows students to &lt;mark&gt;take the drivers&#39; seat and teach their own class&lt;/mark&gt;—at least for a little while. The term starts with learning the ins and outs of inclusive pedagogy and teaches us how to conduct and present research for a wide audience in a particular issue area. It builds communication skills, leadership skills, and teamwork as each student team ends the term with a three-day lesson blitz to teach their peers about their findings and engage them with projects to cement their learnings. 
 
-[[Sounds cool!]]</tw-passagedata><tw-passagedata pid="20" name="Sounds cool!" tags="" position="625,1925" size="100,100">That&#39;s the point! I know 2025 is an era marked by uncertainty, political polarization, economic instability, and a general disinvestment from quality public education. Our hope at 2045 High is that students have a greater say in their education so as to quell feelings of being controlled, disinterest, and confusion, and replace those feelings with those of personal autonomy, renewed interest, and student-centered holistic schooling that values each student as an integral part of not only their school, but also their community and the world at large.
+[[Sounds cool!]]</tw-passagedata><tw-passagedata pid="20" name="Sounds cool!" tags="" position="625,1925" size="100,100">That&#39;s the point! I know 2025 is an era marked by uncertainty, political polarization, economic instability, and a general disinvestment from quality public education. Our hope at 2045 High is that students have a greater say in their education so as to quell feelings of being controlled, disinterest, and confusion, and replace those feelings with those of personal autonomy, renewed interest, and &lt;mark&gt;student-centered holistic schooling that values each student as an integral part of not only their school, but also their community and the world at large&lt;/mark&gt;.
 
 See you tomorrow!</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
